@@ -83,7 +83,7 @@ class App extends Component {
       <div>
         <nav className="navbar">
           <a href="/" className="navbar-brand">Chatty</a>
-          <span> {this.state.clientConnections} users online </span>
+          <span className ="user-online"> {this.state.clientConnections} users online </span>
         </nav>
         <MessageList messages = {this.state.messages} />
         <ChatBar currentUser = {this.state.currentUser.name} newMessage = {this.msg.bind(this)} newUser = {this.user.bind(this)} />
